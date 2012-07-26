@@ -516,6 +516,13 @@ class SteamId extends XMLData {
     }
 
     /**
+     * @return String
+     */
+    public function getAccountId() {
+      return $this->getSteamId64() & 0x0000000000ffffffff;
+    }
+
+    /**
      * Returns the time in minutes this user has played this game in the last
      * two weeks
      *
