@@ -519,7 +519,7 @@ class SteamId extends XMLData {
      * @return String
      */
     public function getAccountId() {
-      return $this->getSteamId64() & 0x0000000000ffffffff;
+      return $this->getSteamId64() & 0x00000000ffffffff;
     }
 
     /**
